@@ -74,8 +74,8 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <section ref={containerRef} className="min-h-screen w-full flex items-center justify-center bg-void py-20 px-6 relative z-10">
-            <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section ref={containerRef} className="min-h-screen w-full flex items-center justify-center bg-void py-10 md:py-20 px-4 md:px-6 relative z-10">
+            <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 
                 {/* Left Side: Copy */}
                 <div className="space-y-8">
@@ -87,7 +87,7 @@ export default function AboutSection() {
                     </div>
 
                     <BlurReveal delay={0.2}>
-                        <h3 className="text-4xl md:text-5xl font-bold font-sans leading-tight">
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold font-sans leading-tight">
                             Hi, I'm Ayushman. <br />
                             I have a love-hate relationship with <span className="text-neon-blue inline-block hover:scale-110 transition-transform cursor-crosshair">Stack Overflow</span>.
                         </h3>
@@ -116,7 +116,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Right Side: Tech Cloud */}
-                <div className="h-[500px] w-full relative">
+                <div className="h-[350px] md:h-[500px] w-full relative">
                     <div className="absolute inset-0 bg-gradient-to-b from-void via-transparent to-void z-10 pointer-events-none" />
                     <TechCloud />
                 </div>

@@ -21,6 +21,7 @@ body {
   font-family: var(--font-sans);
   overscroll-behavior: none;
   cursor: none;
+  overflow-x: hidden;
   /* Hide default cursor */
 }
 
